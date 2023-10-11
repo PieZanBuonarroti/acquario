@@ -5,7 +5,7 @@ public class Main {
         Pesce p = new Pesce("Squalo balena", "Onnivoro", "Gilberto");
         System.out.println(p.toString());
 
-        
+
 
     }
 
