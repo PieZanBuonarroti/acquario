@@ -49,11 +49,11 @@ public class Acquario {
     public boolean addPesce(Pesce pesce){
         boolean rit = false;
         int i = 0;
-        while(i<this.pesci.length && this.pesci[i]!=null){
+        while(this.pesci[i]!=null){
             i++;
         }
         if(this.pesci[i]==null){
-            this.pesci[i] = pesce.clone();
+            this.pesci[i] = pesce;
             rit = true;
         }
         return rit;
@@ -85,7 +85,11 @@ public class Acquario {
         rit += "Pesci: " +"\n";
         rit +="[\n";
         for(int i=0; i<this.pesci.length; i++){
-            this.pesci[i].toString();
+            if(this.pesci[i]!=null){
+                rit+=this.pesci[i].toString();
+            }else{
+                rit+= null +"\n";
+            }
         }
         rit +="]\n";
         rit +="}\n";
