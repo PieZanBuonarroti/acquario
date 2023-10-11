@@ -1,2 +1,8 @@
-package PACKAGE_NAME;public class Pesce {
+public class Pesce {
+
+    private String specie;
+    private String dieta;
+    private int eta;
+    private String nome;
+    
 }
