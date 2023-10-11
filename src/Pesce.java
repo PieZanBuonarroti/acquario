@@ -34,5 +34,13 @@ public class Pesce {
         return nome;
     }
 
+    public String toString(){
+        String rit ="{\n";
+        rit += "Specie: " +this.specie +"\n";
+        rit += "Dieta: " +this.dieta +"\n";
+        rit += "Nome: " +this.nome +"\n";
+        rit +="}\n";
+        return rit;
+    }
     
 }
