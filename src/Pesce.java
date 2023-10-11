@@ -42,5 +42,9 @@ public class Pesce {
         rit +="}\n";
         return rit;
     }
-    
+
+    public Pesce clone(){
+        Pesce p = new Pesce(this.specie, this.dieta, this.nome);
+        return p;
+    }
 }
