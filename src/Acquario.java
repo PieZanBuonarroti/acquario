@@ -61,12 +61,10 @@ public class Acquario {
 
     public boolean removePesce(int pos){
         boolean rit = false;
-        if(pos>0 && pos>this.pesci.length){
             if(this.pesci[pos]!=null){
                 this.pesci[pos] = null;
                 rit = true;
             }
-        }
         return rit;
     }
 
