@@ -39,4 +39,19 @@ public class Acquario {
     }
 
 
+    public String toString(){
+        String rit ="{\n";
+        rit += "Nome Acquario: " +this.nome +"\n";
+        rit += "Location: " +this.location +"\n";
+        rit += "Pesci: " +"\n";
+        rit +="[\n";
+        for(int i=0; i<this.pesci.length; i++){
+            this.pesci[i].toString();
+        }
+        rit +="]\n";
+        rit +="}\n";
+        return rit;
+    }
+
+
 }
