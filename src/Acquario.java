@@ -38,7 +38,15 @@ public class Acquario {
         }
     }
 
+    public String getNome() {
+        return nome;
+    }
 
+    public String getLocation() {
+        return location;
+    }
+
+    
     public String toString(){
         String rit ="{\n";
         rit += "Nome Acquario: " +this.nome +"\n";
