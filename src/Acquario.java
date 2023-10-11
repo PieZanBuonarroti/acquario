@@ -59,8 +59,16 @@ public class Acquario {
         return rit;
     }
 
-
-
+    public boolean removePesce(int pos){
+        boolean rit = false;
+        if(pos>0 && pos>this.pesci.length){
+            if(this.pesci[pos]!=null){
+                this.pesci[pos] = null;
+                rit = true;
+            }
+        }
+        return rit;
+    }
 
     public Pesce readPesce(int pos){
         Pesce p = null;
