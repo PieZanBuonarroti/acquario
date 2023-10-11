@@ -46,6 +46,18 @@ public class Acquario {
         return location;
     }
 
+
+
+
+
+
+    public Pesce readPesce(int pos){
+        Pesce p = null;
+        if(this.pesci[pos]!=null){
+            p = this.pesci[pos].clone();
+        }
+        return p;
+    }
     
     public String toString(){
         String rit ="{\n";
