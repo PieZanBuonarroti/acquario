@@ -53,5 +53,9 @@ public class Acquario {
         return rit;
     }
 
+    public Acquario clone(){
+        Acquario a = new Acquario(this.nome, this.location, this.pesci);
+        return a;
+    }
 
 }
