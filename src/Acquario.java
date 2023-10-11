@@ -46,7 +46,18 @@ public class Acquario {
         return location;
     }
 
-
+    public boolean addPesce(Pesce pesce){
+        boolean rit = false;
+        int i = 0;
+        while(i<this.pesci.length && this.pesci[i]!=null){
+            i++;
+        }
+        if(this.pesci[i]==null){
+            this.pesci[i] = pesce.clone();
+            rit = true;
+        }
+        return rit;
+    }
 
 
 
@@ -58,7 +69,7 @@ public class Acquario {
         }
         return p;
     }
-    
+
     public String toString(){
         String rit ="{\n";
         rit += "Nome Acquario: " +this.nome +"\n";
