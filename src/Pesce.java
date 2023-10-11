@@ -2,10 +2,9 @@ public class Pesce {
 
     private String specie;
     private String dieta;
-    private int eta;
     private String nome;
 
-    public Pesce(String specie, String dieta, int eta, String nome){
+    public Pesce(String specie, String dieta, String nome){
         if(specie.equals("")){
             this.specie="Specie non identificata";
         }else{
@@ -21,11 +20,19 @@ public class Pesce {
         }else{
             this.nome=nome;
         }
-        if(eta>0){
-            this.eta=eta;
-        }else{
-            this.eta=1;
-        }
     }
 
+    public String getSpecie() {
+        return specie;
+    }
+
+    public String getDieta() {
+        return dieta;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    
 }
